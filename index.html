@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數學題目生成器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>數學題目生成器</h1>
+
+        <div>
+            <label for="min-range">最小數字:</label>
+            <input type="number" id="min-range" value="1">
+        </div>
+
+        <div>
+            <label for="max-range">最大數字:</label>
+            <input type="number" id="max-range" value="10">
+        </div>
+
+        <div>
+            <label for="problem-type">題型:</label>
+            <select id="problem-type">
+                <option value="add">加法</option>
+                <option value="subtract">減法</option>
+                <option value="mixed">混合</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="num-questions">題目數量:</label>
+            <input type="number" id="num-questions" value="5">
+        </div>
+
+        <button onclick="generateQuiz()">生成考卷</button>
+
+        <div id="quiz-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
